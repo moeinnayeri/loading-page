@@ -11,21 +11,82 @@
 
 <body>
     <div class="container">
-        <p>Welcome Viewrs!</p>
+        <p>Welcome Viewers!</p>
 
     </div>
 
     <div class="loading-page">
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-
-            <path
-                d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561 561" >
+            <defs>
+                <style>
+                  .cls-1 {
+                    filter: url(#outer-glow-3);
+                    stroke: #e52822;
+                  }
+            
+                  .cls-1, .cls-2, .cls-3, .cls-4 {
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 4px;
+                  }
+            
+                  .cls-2 {
+                    filter: url(#outer-glow-2);
+                  }
+            
+                  .cls-2, .cls-4 {
+                    stroke: #fff;
+                  }
+            
+                  .cls-3 {
+                    filter: url(#outer-glow-4);
+                    stroke: #0b8c38;
+                  }
+            
+                  .cls-4 {
+                    filter: url(#outer-glow-1);
+                  }
+                </style>
+                <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+                  <feOffset dx="0" dy="0"/>
+                  <feGaussianBlur result="blur" stdDeviation="15"/>
+                  <feFlood flood-color="#fff" flood-opacity=".75"/>
+                  <feComposite in2="blur" operator="in"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+                <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+                  <feOffset dx="0" dy="0"/>
+                  <feGaussianBlur result="blur-2" stdDeviation="15"/>
+                  <feFlood flood-color="#fff" flood-opacity=".75"/>
+                  <feComposite in2="blur-2" operator="in"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+                <filter id="outer-glow-3" filterUnits="userSpaceOnUse">
+                  <feOffset dx="0" dy="0"/>
+                  <feGaussianBlur result="blur-3" stdDeviation="15"/>
+                  <feFlood flood-color="red" flood-opacity=".9"/>
+                  <feComposite in2="blur-3" operator="in"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+                <filter id="outer-glow-4" filterUnits="userSpaceOnUse">
+                  <feOffset dx="0" dy="0"/>
+                  <feGaussianBlur result="blur-4" stdDeviation="20"/>
+                  <feFlood flood-color="lime" flood-opacity="1"/>
+                  <feComposite in2="blur-4" operator="in"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+              </defs>
+              <path class="cls-4" d="m438.99,286.65v151.44h-152.34l-75.72,75.72h245.19l57.69-57.69v-245.19l-74.82,75.72Z"/>
+              <path class="cls-2" d="m119.88,63.09l-57.69,57.69v245.19l75.72-75.72v-151.44h152.34l75.72-75.72c-.9,0-246.09,0-246.09,0Z"/>
+              <path class="cls-1" d="m513.81,81.12v95.55l-337.14,337.14h-95.55L513.81,81.12Z"/>
+              <path class="cls-3" d="m496.68,62.19L62.19,496.69v-96.46L401.13,62.19h95.55Z"/> 
         </svg>
 
 
-        <div class="name-container">
-            <div class="logo-name">nullx</div>
-        </div>
+        <!-- <div class="name-container">
+            <div class="logo-name">گمرک جمهوری اسلامی ایران</div>
+        </div> -->
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
